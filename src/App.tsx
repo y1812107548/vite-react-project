@@ -3,6 +3,12 @@ import "./App.css";
 import About from "./About";
 import Input from "./Input";
 import Picture from "./Picture";
+import Cart from "./Cart";
+import Queue from "./Queue";
+// import Position from "./Position";
+// import Drag from "./drag/Drag";
+import Chat from "./chat/Chat";
+import TaskApp from "./task/TaskApp";
 
 interface State {
   count: number;
@@ -57,21 +63,20 @@ function Button({
 }
 
 function App(): JSX.Element {
-  const [state, dispatch] = useReducer(stateReducer, initialState);
-  const [theme, setTheme] = useState<Theme>("light");
-  const addFive = () => dispatch({ type: "setCount", value: state.count + 5 });
-  const reset = () => dispatch({ type: "reset" });
+  // const [state, dispatch] = useReducer(stateReducer, initialState);
+  const [theme] = useState<Theme>("light");
+  // const addFive = () => dispatch({ type: "setCount", value: state.count + 5 });
+  // const reset = () => dispatch({ type: "reset" });
 
   return (
     <>
       <ThemeContext.Provider value={theme}>
-        <h1>Vite + React</h1>
+        {/* <h1>Vite + React</h1>
         <div className="card">
           <div>计数：{state.count}</div>
           <button onClick={addFive}>Add 5</button>
           <button onClick={reset}>Reset</button>
-        </div>
-
+        </div> */}
         <About useGetTheme={useGetTheme}></About>
         <Input></Input>
         <Toolbar
@@ -79,6 +84,12 @@ function App(): JSX.Element {
           onUploadImage={() => alert("上传图片")}
         ></Toolbar>
         <Picture></Picture>
+        <Cart></Cart>
+        <Queue></Queue>
+        {/* <Position></Position> */}
+        {/* <Drag></Drag> */}
+        <Chat></Chat>
+        <TaskApp></TaskApp>
       </ThemeContext.Provider>
     </>
   );
