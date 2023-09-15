@@ -54,7 +54,6 @@ function TestCase({
   expected: number;
 }) {
   const actual = getFinalState(baseState, queue);
-  console.log("queue", queue);
   return (
     <>
       <p>

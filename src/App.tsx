@@ -1,14 +1,18 @@
-import { useState, useReducer, createContext, useContext } from "react";
+import {
+  useState,
+  // useReducer,
+  createContext,
+  useContext
+} from "react";
 import "./App.css";
 import About from "./About";
 import Input from "./Input";
-import Picture from "./Picture";
 import Cart from "./Cart";
-import Queue from "./Queue";
-// import Position from "./Position";
-// import Drag from "./drag/Drag";
-import Chat from "./chat/Chat";
-import TaskApp from "./task/TaskApp";
+import Timer from "./timer/Timer";
+// import Queue from "./Queue";
+// import TaskApp from "./task/TaskApp";
+// import RestForm from "./rest-form/RestForm";
+// import ToDo from "./todo/ToDo";
 
 interface State {
   count: number;
@@ -83,13 +87,12 @@ function App(): JSX.Element {
           onPlayMovie={() => alert("播放视频")}
           onUploadImage={() => alert("上传图片")}
         ></Toolbar>
-        <Picture></Picture>
         <Cart></Cart>
-        <Queue></Queue>
-        {/* <Position></Position> */}
-        {/* <Drag></Drag> */}
-        <Chat></Chat>
-        <TaskApp></TaskApp>
+        {/* <Queue></Queue> */}
+        {/* <TaskApp></TaskApp> */}
+        {/* <RestForm></RestForm> */}
+        {/* <ToDo></ToDo> */}
+        <Timer></Timer>
       </ThemeContext.Provider>
     </>
   );
