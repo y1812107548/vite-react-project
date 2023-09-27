@@ -5,10 +5,14 @@ import {
   useContext
 } from "react";
 import "./App.css";
-import About from "./About";
-import Input from "./Input";
-import Cart from "./Cart";
-import Timer from "./timer/Timer";
+import ButtonTooltip from "./button-tooltip/ButtonTooltip";
+// import ModalDialog from "./dialog/ModalDialog";
+// import Observer from "./observer/Observer";
+// import About from "./About";
+// import Input from "./Input";
+// import Product from "./product/Product";
+// import Cart from "./Cart";
+// import Timer from "./timer/Timer";
 // import Queue from "./Queue";
 // import TaskApp from "./task/TaskApp";
 // import RestForm from "./rest-form/RestForm";
@@ -41,30 +45,30 @@ function stateReducer(state: State, action: CounterAction): State {
   }
 }
 
-function Toolbar({
-  onPlayMovie,
-  onUploadImage,
-}: {
-  onPlayMovie: () => void;
-  onUploadImage: () => void;
-}): JSX.Element {
-  return (
-    <div>
-      <Button onClick={onPlayMovie}>播放视频</Button>
-      <Button onClick={onUploadImage}>上传图片</Button>
-    </div>
-  );
-}
+// function Toolbar({
+//   onPlayMovie,
+//   onUploadImage,
+// }: {
+//   onPlayMovie: () => void;
+//   onUploadImage: () => void;
+// }): JSX.Element {
+//   return (
+//     <div>
+//       <Button onClick={onPlayMovie}>播放视频</Button>
+//       <Button onClick={onUploadImage}>上传图片</Button>
+//     </div>
+//   );
+// }
 
-function Button({
-  onClick,
-  children,
-}: {
-  onClick: () => void;
-  children: React.ReactElement | string;
-}): JSX.Element {
-  return <button onClick={onClick}>{children}</button>;
-}
+// function Button({
+//   onClick,
+//   children,
+// }: {
+//   onClick: () => void;
+//   children: React.ReactElement | string;
+// }): JSX.Element {
+//   return <button onClick={onClick}>{children}</button>;
+// }
 
 function App(): JSX.Element {
   // const [state, dispatch] = useReducer(stateReducer, initialState);
@@ -81,18 +85,22 @@ function App(): JSX.Element {
           <button onClick={addFive}>Add 5</button>
           <button onClick={reset}>Reset</button>
         </div> */}
-        <About useGetTheme={useGetTheme}></About>
-        <Input></Input>
-        <Toolbar
+        {/* <About useGetTheme={useGetTheme}></About> */}
+        {/* <Input></Input> */}
+        {/* <Toolbar
           onPlayMovie={() => alert("播放视频")}
           onUploadImage={() => alert("上传图片")}
-        ></Toolbar>
-        <Cart></Cart>
+        ></Toolbar> */}
+        {/* <Cart></Cart> */}
         {/* <Queue></Queue> */}
         {/* <TaskApp></TaskApp> */}
         {/* <RestForm></RestForm> */}
         {/* <ToDo></ToDo> */}
-        <Timer></Timer>
+        {/* <Timer></Timer> */}
+        {/* <Product></Product> */}
+        {/* <ModalDialog></ModalDialog> */}
+        {/* <Observer></Observer> */}
+        <ButtonTooltip></ButtonTooltip>
       </ThemeContext.Provider>
     </>
   );

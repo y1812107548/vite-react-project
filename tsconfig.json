@@ -4,15 +4,15 @@
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "skipLibCheck": true,
+    "skipLibCheck": true, // 跳过所有声明文件的类型检查
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"]
     },
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "moduleResolution": "bundler",// 模块解析模式
+    "allowImportingTsExtensions": true,// 允许导入ts文件
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
@@ -20,9 +20,9 @@
 
     /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noUnusedLocals": true,// 禁止未使用的变量
+    "noUnusedParameters": true,// 禁止未使用的参数
+    "noFallthroughCasesInSwitch": true,// 禁止switch中的case出现fallthrough语句
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
