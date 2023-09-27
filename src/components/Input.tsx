@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { useFormInput } from "./hook";
+import { useFormInput } from "../hook";
 
 export default function Input() {
   const [value, setValue] = useState("Change me");

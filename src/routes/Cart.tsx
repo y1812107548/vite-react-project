@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-
+import { useState } from "react";
+import Input from "@/components/Input";
 const delay = (ms: number) => {
   return new Promise((resolve) => {
     const timerId: NodeJS.Timeout = setTimeout(() => {
@@ -23,6 +23,8 @@ export default function Cart() {
       <h3>等待：{pending}</h3>
       <h3>完成：{completed}</h3>
       <button onClick={handleClick}>购买</button>
+      <hr />
+      <Input />
     </>
   );
 }

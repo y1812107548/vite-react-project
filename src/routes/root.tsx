@@ -81,6 +81,22 @@ export default function Root() {
         <nav>
           {contacts.length ? (
             <ul>
+              <li>
+                <NavLink to="/">Home</NavLink>
+              </li>
+              <li><NavLink to="/button-tooltip" key="button-tooltip">Button Tooltip</NavLink></li>
+              <li><NavLink to="/modal-dialog" key="modal-dialog">Modal Dialog</NavLink></li>
+              <li><NavLink to="/observer" key="observer">Observer</NavLink></li>
+              <li><NavLink to="/todo" key="todo">ToDo</NavLink></li>
+              <li><NavLink to="/rest-form" key="rest-form">Rest Form</NavLink></li>
+              <li><NavLink to="/drag" key="drag">Drag</NavLink></li>
+              <li><NavLink to="/task" key="task">Task</NavLink></li>
+              <li><NavLink to="/chat" key="chat">Chat</NavLink></li>
+              <li><NavLink to="/product" key="product">Product</NavLink></li>
+              <li><NavLink to="/timer" key="timer">Timer</NavLink></li>
+              <li><NavLink to="/count" key="count">Count</NavLink></li>
+              <li><NavLink to="/cart" key="cart">Cart</NavLink></li>
+              <li><NavLink to="/queue" key="queue">Queue</NavLink></li>
               {contacts.map((contact) => (
                 <li key={contact.id}>
                   <NavLink
@@ -100,6 +116,7 @@ export default function Root() {
                   </NavLink>
                 </li>
               ))}
+
             </ul>
           ) : (
             <p>
