@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/cssinjs": "^1.17.0",
     "antd": "^5.9.2",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",

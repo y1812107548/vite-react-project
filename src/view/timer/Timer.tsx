@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import { useOnlineStatus } from '@/hook/index'
 import { useFadeIn } from "@/hook/index";
 

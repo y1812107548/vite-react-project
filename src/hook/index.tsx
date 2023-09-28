@@ -1,5 +1,5 @@
 import React, { useEffect, useRef,useState,useSyncExternalStore } from 'react';
-import { FadeInAnimation } from '@/routes/timer/animation';
+import { FadeInAnimation } from '@/view/timer/animation';
  export const useEffectEvent = <T extends Event>(
   eventName: string,
   handler: (event: T) => void

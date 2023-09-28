@@ -1,22 +1,22 @@
 import { createBrowserRouter } from "react-router-dom";
-import Contact, { Loader as ContactLoader, Action as ContactAction } from "@/routes/contact-list/contact";
-import EditContact,{ Action as EditAction } from "@/routes/contact-list/edit";
-import { DeleteAction as DestroyAction } from "@/routes/contact-list/destroy";
-import Root, { Loader as RootLoader, Action as RootAction } from "@/routes/root";
+import Contact, { Loader as ContactLoader, Action as ContactAction } from "@/view/contact-list/contact";
+import EditContact,{ Action as EditAction } from "@/view/contact-list/edit";
+import { DeleteAction as DestroyAction } from "@/view/contact-list/destroy";
+import Root, { Loader as RootLoader, Action as RootAction } from "@/view/root";
 import ErrorPage from "@/error-page.tsx";
-import ButtonTooltip from "@/routes/button-tooltip/ButtonTooltip";
-import ModalDialog from "@/routes/dialog/ModalDialog";
-import Observer from "@/routes/observer/Observer";
-import ToDo from "@/routes/todo/ToDo";
-import RestForm from "@/routes/rest-form/RestForm";
-import Drag from "@/routes/drag/Drag";
-import TaskApp from "@/routes/task/TaskApp";
-import Chat from "@/routes/chat/Chat";
-import Product from "@/routes/product/Product";
-import Timer from "@/routes/timer/Timer";
-import Count from "@/routes/count/Count";
-import Cart from "@/routes/Cart";
-import Queue from "@/routes/Queue";
+import ButtonTooltip from "@/view/button-tooltip/ButtonTooltip";
+import ModalDialog from "@/view/dialog/ModalDialog";
+import Observer from "@/view/observer/Observer";
+import ToDo from "@/view/todo/ToDo";
+import RestForm from "@/view/rest-form/RestForm";
+import Drag from "@/view/drag/Drag";
+import TaskApp from "@/view/task/TaskApp";
+import Chat from "@/view/chat/Chat";
+import Product from "@/view/product/Product";
+import Timer from "@/view/timer/Timer";
+import Count from "@/view/count/Count";
+import Cart from "@/view/Cart";
+import Queue from "@/view/Queue";
 export const router = createBrowserRouter([
   {
     path: "/",
